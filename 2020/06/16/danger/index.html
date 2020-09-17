@@ -5,15 +5,22 @@
   
 
   
-  <title>Archives | Hexo</title>
+  <title>修改Hosts文件临时解决Github图床无法访问查看的问题 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/archives/index.html">
+  <meta name="description" content="紧急 ！紧急！紧急！">
+<meta property="og:type" content="article">
+<meta property="og:title" content="修改Hosts文件临时解决Github图床无法访问查看的问题">
+<meta property="og:url" content="http://example.com/2020/06/16/danger/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="紧急 ！紧急！紧急！">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://raw.githubusercontent.com/faneGin/eation/master/data/QQ%E6%88%AA%E5%9B%BE20200616184628.png">
+<meta property="article:published_time" content="2020-06-16T10:38:25.000Z">
+<meta property="article:modified_time" content="2020-06-18T11:30:00.000Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="hexo">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/faneGin/eation/master/data/QQ%E6%88%AA%E5%9B%BE20200616184628.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -62,216 +69,75 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-py">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/about.html" class="archive-article-date">
-  <time datetime="2020-09-17T04:58:41.698Z" itemprop="datePublished">Sep 17</time>
+        <section id="main"><article id="post-danger" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/06/16/danger/" class="article-date">
+  <time datetime="2020-06-16T10:38:25.000Z" itemprop="datePublished">2020-06-16</time>
 </a>
-      
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/hexo/">hexo</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/about.html">关于</a>
+    <h1 class="article-title" itemprop="name">
+      修改Hosts文件临时解决Github图床无法访问查看的问题
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/06/24/LEDCONTROL2/" class="archive-article-date">
-  <time datetime="2020-06-24T01:31:21.000Z" itemprop="datePublished">Jun 24</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/24/LEDCONTROL2/">控制BBC开发板上的任意一LED小灯</a>
-    </h1>
-  
+        <h1 id="紧急-！紧急！紧急！"><a href="#紧急-！紧急！紧急！" class="headerlink" title="紧急 ！紧急！紧急！"></a>紧急 ！紧急！紧急！</h1><a id="more"></a>
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/06/24/LEDCONTROL1/" class="archive-article-date">
-  <time datetime="2020-06-24T01:30:42.000Z" itemprop="datePublished">Jun 24</time>
-</a>
+<p>最近我使用Github图床是老是碰到无法上传图片，以及无法查看博文图片的问题。</p>
+<p>后来一查原来是最近国内的墙貌似又高了（<strong>两会在开</strong>）所以我找到了以下方法来解决。</p>
+<h2 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h2><p>先找出host文件 ，文件的路径为 <strong>c:\windows\system32\drivers\etc</strong> </p>
+<p><img src="https://raw.githubusercontent.com/faneGin/eation/master/data/QQ%E6%88%AA%E5%9B%BE20200616184628.png"></p>
+<p> 填入以下地址即可  <strong>199.232.68.133 raw.githubusercontent.com</strong></p>
+<h2 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h2><p>同上面方法第一步一样打开host文件，填入以下代码，注意**#**号后面有空格。</p>
+<p>#GitHub Start<br>52.74.223.119 github.com<br>192.30.253.119 gist.github.com<br>54.169.195.247 api.github.com<br>185.199.111.153 assets-cdn.github.com<br>151.101.76.133 raw.githubusercontent.com<br>151.101.108.133 user-images.githubusercontent.com<br>151.101.76.133 gist.githubusercontent.com<br>151.101.76.133 cloud.githubusercontent.com<br>151.101.76.133 camo.githubusercontent.com<br>151.101.76.133 avatars0.githubusercontent.com<br>151.101.76.133 avatars1.githubusercontent.com<br>151.101.76.133 avatars2.githubusercontent.com<br>151.101.76.133 avatars3.githubusercontent.com<br>151.101.76.133 avatars4.githubusercontent.com<br>151.101.76.133 avatars5.githubusercontent.com<br>151.101.76.133 avatars6.githubusercontent.com<br>151.101.76.133 avatars7.githubusercontent.com<br>151.101.76.133 avatars8.githubusercontent.com<br>#GitHub End</p>
+<h2 id="两种方法最好都记住已被不时之需。"><a href="#两种方法最好都记住已被不时之需。" class="headerlink" title="两种方法最好都记住已被不时之需。"></a>两种方法最好都记住已被不时之需。</h2>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/24/LEDCONTROL1/">控制BBC开发板矩阵的行和列</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/06/22/accelerometer1/" class="archive-article-date">
-  <time datetime="2020-06-22T13:00:57.000Z" itemprop="datePublished">Jun 22</time>
-</a>
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/06/16/danger/" data-id="ckf6cguae000bm4v8cqjn8q82" class="article-share-link">Share</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/22/accelerometer1/">加速度值的显示</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/06/21/service1/" class="archive-article-date">
-  <time datetime="2020-06-21T05:35:43.000Z" itemprop="datePublished">Jun 21</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/21/service1/">micro:bit的读写特性</a>
-    </h1>
-  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li></ul>
 
-    </header>
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/06/18/micro2/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          micro:bit的服务和特性
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/06/16/wutuo/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">人类能从老鼠乌托邦中认识到什么</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/06/18/micro2/" class="archive-article-date">
-  <time datetime="2020-06-18T10:41:07.000Z" itemprop="datePublished">Jun 18</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/18/micro2/">micro:bit的服务和特性</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/06/16/danger/" class="archive-article-date">
-  <time datetime="2020-06-16T10:38:25.000Z" itemprop="datePublished">Jun 16</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/16/danger/">修改Hosts文件临时解决Github图床无法访问查看的问题</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/06/16/wutuo/" class="archive-article-date">
-  <time datetime="2020-06-16T10:25:17.000Z" itemprop="datePublished">Jun 16</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/16/wutuo/">人类能从老鼠乌托邦中认识到什么</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/06/16/micro1/" class="archive-article-date">
-  <time datetime="2020-06-16T05:28:14.000Z" itemprop="datePublished">Jun 16</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/16/micro1/">micro:bit设备连接</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/05/31/houalang/" class="archive-article-date">
-  <time datetime="2020-05-31T15:08:23.000Z" itemprop="datePublished">May 31</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/31/houalang/">关于后浪一谈</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-
-  <nav id="page-nav">
-    
-    <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="extend next" rel="next" href="/archives/page/2/">Next &amp;raquo;</a>
-  </nav>
 
 </section>
         

@@ -5,14 +5,19 @@
   
 
   
-  <title>Archives | Hexo</title>
+  <title>hexo搭建系列（一） | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/archives/index.html">
+  <meta name="description" content="HEXO搭建准备">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo搭建系列（一）">
+<meta property="og:url" content="http://example.com/2020/04/03/123/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="HEXO搭建准备">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-04-03T01:35:22.000Z">
+<meta property="article:modified_time" content="2020-04-03T02:18:50.000Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="hexo">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -62,216 +67,135 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-py">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/about.html" class="archive-article-date">
-  <time datetime="2020-09-17T04:58:41.698Z" itemprop="datePublished">Sep 17</time>
+        <section id="main"><article id="post-123" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/04/03/123/" class="article-date">
+  <time datetime="2020-04-03T01:35:22.000Z" itemprop="datePublished">2020-04-03</time>
 </a>
-      
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/hexo/">hexo</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/about.html">关于</a>
+    <h1 class="article-title" itemprop="name">
+      hexo搭建系列（一）
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/06/24/LEDCONTROL2/" class="archive-article-date">
-  <time datetime="2020-06-24T01:31:21.000Z" itemprop="datePublished">Jun 24</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/24/LEDCONTROL2/">控制BBC开发板上的任意一LED小灯</a>
-    </h1>
-  
+        <h2 id="HEXO搭建准备"><a href="#HEXO搭建准备" class="headerlink" title="HEXO搭建准备"></a>HEXO搭建准备</h2><a id="more"></a>
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/06/24/LEDCONTROL1/" class="archive-article-date">
-  <time datetime="2020-06-24T01:30:42.000Z" itemprop="datePublished">Jun 24</time>
-</a>
+<blockquote>
+<p>现在市面上的博客很多，如CSDN，博客园，简书等平台，可以直接在上面发表，用户交互做的好，写的文章百度也能搜索的到。缺点是比较不自由，会受到平台的各种限制和恶心的广告。</p>
+<p>而自己购买域名和服务器，搭建博客的成本实在是太高了，不光是说这些购买成本，单单是花力气去自己搭这么一个网站，还要定期的维护它，对于我们大多数人来说，实在是没有这样的精力和时间。</p>
+<p>那么就有第三种选择，直接在github page平台上托管我们的博客。这样就可以安心的来写作，又不需要定期维护，而且hexo作为一个快速简洁的博客框架，用它来搭建博客真的非常容易。</p>
+</blockquote>
+<h3 id="hexo-简介"><a href="#hexo-简介" class="headerlink" title="hexo 简介"></a>hexo 简介</h3><blockquote>
+<p>Hexo是一款基于Node.js的静态博客框架，依赖少易于安装使用，可以方便的生成静态网页托管在GitHub和Coding上，是搭建博客的首选框架。我们可以进入<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">hexo官网</a>进行详细查看，因为Hexo的创建者是台湾人，对中文的支持很友好，可以选择中文进行查看。</p>
+</blockquote>
+<p>教程分三个部分，</p>
+<ul>
+<li>hexo的初级搭建还有部署到github page上，以及个人域名的绑定。</li>
+<li>hexo的基本配置，更换主题，实现多终端工作，以及在coding page部署实现国内外分流</li>
+<li>hexo添加各种功能，包括搜索的SEO，阅读量统计，访问量统计和评论系统等。</li>
+</ul>
+<h3 id="hexo搭建步骤"><a href="#hexo搭建步骤" class="headerlink" title="hexo搭建步骤"></a>hexo搭建步骤</h3><ol>
+<li><p>安装Git</p>
+</li>
+<li><p>安装Node.js</p>
+</li>
+<li><p>安装Hexo</p>
+</li>
+<li><p>GitHub创建个人仓库</p>
+</li>
+<li><p>生成SSH添加到GitHub</p>
+</li>
+<li><p>将hexo部署到GitHub</p>
+</li>
+<li><p>设置个人域名</p>
+</li>
+<li><p>发布文章</p>
+</li>
+</ol>
+<h3 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h3><blockquote>
+<p>Git是目前世界上最先进的分布式版本控制系统，可以有效、高速的处理从很小到非常大的项目版本管理。也就是用来管理你的hexo博客文章，上传到GitHub的工具。 </p>
+</blockquote>
+<h3 id="安装nodejs"><a href="#安装nodejs" class="headerlink" title="安装nodejs"></a>安装nodejs</h3><p>一般来说现在安装git会一起打包js</p>
+<p>所以我们可以输入以下代码来检查一下版本：</p>
+<p><code>node -v</code> </p>
+<p><code>npm -v</code> </p>
+<p> 顺便说一下，windows在git安装完后，就可以直接使用git bash来敲命令行了，不用自带的cmd，cmd有点难用。 </p>
+<h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><p> 前面git和nodejs安装好后，就可以安装hexo了，你可以先创建一个文件夹blog，然后<code>cd</code>到这个文件夹下（或者在这个文件夹下直接右键git bash打开）。</p>
+<p> 输入命令  </p>
+<p> <code>npm install -g hexo-cli</code> </p>
+<p>依旧用<code>hexo -v</code>查看一下版本</p>
+<p>至此就全部安装完了。</p>
+<p>接下来初始化一下hexo</p>
+<p><code>hexo init myblog</code></p>
+<p> 这个myblog可以自己取什么名字都行，然后 </p>
+<p><code>cd myblog //进入这个myblog文件夹</code> </p>
+<p><code>npm install</code> </p>
+<p> 新建完成后，指定文件夹目录下有： </p>
+<ul>
+<li><p>node_modules: 依赖包</p>
+</li>
+<li><p>public：存放生成的页面</p>
+</li>
+<li><p>scaffolds：生成文章的一些模板</p>
+</li>
+<li><p>source：用来存放你的文章</p>
+</li>
+<li><p>themes：主题</p>
+</li>
+<li><p>** _config.yml: 博客的配置文件**</p>
+</li>
+</ul>
+<h3 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h3><p><code>hexo g</code><br><code>hexo server</code></p>
+<p>打开hexo的服务，在浏览器输入localhost:4000就可以看到你生成的博客了。<br>完</p>
+
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/24/LEDCONTROL1/">控制BBC开发板矩阵的行和列</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/06/22/accelerometer1/" class="archive-article-date">
-  <time datetime="2020-06-22T13:00:57.000Z" itemprop="datePublished">Jun 22</time>
-</a>
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/04/03/123/" data-id="ckf6cgu9f0000m4v86ooe8p9t" class="article-share-link">Share</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/22/accelerometer1/">加速度值的显示</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/06/21/service1/" class="archive-article-date">
-  <time datetime="2020-06-21T05:35:43.000Z" itemprop="datePublished">Jun 21</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/21/service1/">micro:bit的读写特性</a>
-    </h1>
-  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li></ul>
 
-    </header>
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/05/21/hexo/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          hexo搭建系列(二)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/PY.html" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">友情链接</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/06/18/micro2/" class="archive-article-date">
-  <time datetime="2020-06-18T10:41:07.000Z" itemprop="datePublished">Jun 18</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/18/micro2/">micro:bit的服务和特性</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/06/16/danger/" class="archive-article-date">
-  <time datetime="2020-06-16T10:38:25.000Z" itemprop="datePublished">Jun 16</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/16/danger/">修改Hosts文件临时解决Github图床无法访问查看的问题</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/06/16/wutuo/" class="archive-article-date">
-  <time datetime="2020-06-16T10:25:17.000Z" itemprop="datePublished">Jun 16</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/16/wutuo/">人类能从老鼠乌托邦中认识到什么</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/06/16/micro1/" class="archive-article-date">
-  <time datetime="2020-06-16T05:28:14.000Z" itemprop="datePublished">Jun 16</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/16/micro1/">micro:bit设备连接</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/05/31/houalang/" class="archive-article-date">
-  <time datetime="2020-05-31T15:08:23.000Z" itemprop="datePublished">May 31</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/31/houalang/">关于后浪一谈</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-
-  <nav id="page-nav">
-    
-    <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="extend next" rel="next" href="/archives/page/2/">Next &amp;raquo;</a>
-  </nav>
 
 </section>
         
